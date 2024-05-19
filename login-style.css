@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #212925;
+    color: #ffffff;
+    font-family: 'source serif 4', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 37vw;
+    border-bottom: 3px solid #97573D;
+}
+
+.theme-button{
+    margin-right: 5vw;
+    top: 100%;
+    right: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 460px;
+    max-height: 460px;
+    border: 5px solid #552A19;
+    border-radius: 15px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+    gap: 5vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
