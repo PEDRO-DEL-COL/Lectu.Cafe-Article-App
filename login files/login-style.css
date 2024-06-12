@@ -17,22 +17,56 @@ body{
 .header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5vh;
-}
-
-.header-text{
-    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    display: flex;
     align-items: center;
     text-align: center;
     font-size: 40px;
-    margin-left: 37vw;
+}
+
+h1{
     border-bottom: 3px solid #97573D;
 }
 
+.btn-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #97573D;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#theme-button{
+    width: 20px;
+    height: 20px;
+    border-color: #97573D;
+    background-color: #97573D;
+    outline: none;
+    /* padding: 10px; */
+    border-radius: 100%;
+}
+
+#theme-button:hover {
+    cursor: pointer;
+}
+
+.active{
+    justify-content: end;
+    transition: all 0.3s ease;
+}
+
 .theme-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80%;
+    margin-top: 1%;
+    font-size: 13px;
+    flex-direction: column;
+    max-width: 80px;
     margin-right: 5vw;
     top: 100%;
     right: 100%;
@@ -46,8 +80,8 @@ body{
 }
 
 img{
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 350px;
     border: 5px solid #552A19;
     border-radius: 15px;
     margin: 5vh;
@@ -115,4 +149,24 @@ form{
     transform: translateY(8%);
     transition: all 0.1s ease;
     box-shadow: 1px 1px 2px #000;
+}
+
+@media screen and (max-width: 920px) {
+    img{
+        max-width: 300px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    img{
+        display: none;
+    }
 }
